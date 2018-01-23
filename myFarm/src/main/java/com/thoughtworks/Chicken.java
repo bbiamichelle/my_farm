@@ -1,6 +1,6 @@
 package com.thoughtworks;
 
-public class Chicken {
+public class Chicken extends Animal {
     public String greeting() {
         return "Cocoricó";
     }
