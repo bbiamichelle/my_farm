@@ -24,15 +24,13 @@ public class Cow extends Animal {
         return distance / speed;
     }
 
-
-//    public String printInformationCow(){
-//        String dados = "\n Name:" + this.name;
-//        dados += "\n Idade:" + this.age +"years old";
-//        dados += "\n" + this.greeting();
-//        return dados;
-//    }
-
     public int getAge() {
         return age;
+    }
+
+    public String printInformationCow(){
+        String dados = this.run() + "\n and ";
+        dados += this.age + " years old";
+        return dados;
     }
 }

@@ -6,14 +6,11 @@ public class App
     public static void main( String[] args ) {
 
         Cow cow1 = new Cow("Emma", 5, 8);
-        cow1.calculateTime(40);
         System.out.println(cow1.printInformationCow());
 
         Cow cow2 = new Cow("Penelope", 8, 9);
-        cow2.calculateTime(80);
-        System.out.println(cow2.printInformationCow());
 
-        Dog dog = new Dog();
+        Dog dog = new Dog("Bu", 8,4);
         System.out.println(dog.greeting());
         System.out.println(dog.run());
 

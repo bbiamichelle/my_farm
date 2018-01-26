@@ -7,7 +7,7 @@ public class CowTest {
     @Test
     public void testingCowEmittingSound(){
         Cow cow = new Cow("Bia", 8, 6);
-        assertEquals("Mooom", cow.greeting());
+        assertEquals("Moooooom", cow.greeting());
     }
 
     @Test

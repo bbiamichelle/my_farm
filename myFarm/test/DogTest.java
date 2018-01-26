@@ -5,17 +5,21 @@ import static org.junit.Assert.assertEquals;
 
 public class DogTest {
     @Test
-    public void testingDogEmittingSound (){
-        Dog dog = new Dog ();
-        assertEquals("ruff", dog.greeting());
+    public void testingCowEmittingSound(){
+        Dog dog = new Dog("Bia", 8, 6);
+        assertEquals("Au au", dog.greeting());
     }
 
     @Test
-    public void testingSpeedDog (){
-        Dog dog = new Dog ();
-        assertEquals("Dog run 40km/h", dog.run());
+    public void testingSpeedCow(){
+        Dog dog = new Dog("Bia",6, 8);
+        assertEquals("Bia is running at 8km/h", dog.run());
     }
 
+    @Test
+    public void testingHoursForDistance(){
+        Dog dog = new Dog ("Bia", 7,6);
+        assertEquals(10, dog.run(60));
+    }
 }
-
 
