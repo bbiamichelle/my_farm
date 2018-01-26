@@ -5,15 +5,11 @@ public class App
 {
     public static void main( String[] args ) {
 
-        Cow cow1 = new Cow();
-        cow1.name = "Emma";
-        cow1.age = 5;
+        Cow cow1 = new Cow("Emma", 5, 8);
         cow1.calculateTime(40);
         System.out.println(cow1.printInformationCow());
 
-        Cow cow2 = new Cow();
-        cow2.name = "Penelope";
-        cow2.age = 8;
+        Cow cow2 = new Cow("Penelope", 8, 9);
         cow2.calculateTime(80);
         System.out.println(cow2.printInformationCow());
 
