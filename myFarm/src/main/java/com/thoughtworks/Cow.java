@@ -13,7 +13,7 @@ public class Cow extends Animal {
     }
 
     public String greeting() {
-        return "Mooom";
+        return "Mom";
     }
 
     public String run() {
@@ -26,6 +26,10 @@ public class Cow extends Animal {
 
     public int getAge() {
         return age;
+    }
+
+    public int getSpeed() {
+        return speed;
     }
 
     public String printInformationCow(){

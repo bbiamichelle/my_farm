@@ -15,7 +15,7 @@ public class Pig extends Animal {
     }
 
     public String run() {
-        return name + "is running at " + speed + "km/h";
+        return name + " is running at " + speed + "km/h";
     }
 
     public int run (int distance){
@@ -26,7 +26,11 @@ public class Pig extends Animal {
         return age;
     }
 
-    public String printInformationCow(){
+    public int getSpeed() {
+        return speed;
+    }
+
+    public String printInformationPig(){
         String dados = this.run() + "\n and ";
         dados += this.age + " yearls old";
         return dados;

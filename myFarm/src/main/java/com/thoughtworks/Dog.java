@@ -12,11 +12,11 @@ public class Dog extends Animal {
     }
 
     public String greeting() {
-        return "ruff";
+        return "Au au";
     }
 
     public String run () {
-        return name + " is running at" + speed + "km/h";
+        return name + " is running at " + speed + "km/h";
     }
 
     public int run (int distance){
@@ -27,7 +27,11 @@ public class Dog extends Animal {
         return age;
     }
 
-    public String printInformationCow(){
+    public int getSpeed() {
+        return speed;
+    }
+
+    public String printInformationDog(){
         String dados = this.run() + "\n and ";
         dados += this.age + " years old";
         return dados;
